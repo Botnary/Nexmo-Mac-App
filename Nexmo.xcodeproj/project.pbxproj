@@ -1,0 +1,468 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		158B51CA15B645BD00DFB214 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 158B51C915B645BD00DFB214 /* Cocoa.framework */; };
+		158B51D415B645BD00DFB214 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 158B51D215B645BD00DFB214 /* InfoPlist.strings */; };
+		158B51D615B645BD00DFB214 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 158B51D515B645BD00DFB214 /* main.m */; };
+		158B51DA15B645BD00DFB214 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 158B51D815B645BD00DFB214 /* Credits.rtf */; };
+		158B51DD15B645BD00DFB214 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 158B51DC15B645BD00DFB214 /* AppDelegate.m */; };
+		158B51E015B645BD00DFB214 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 158B51DE15B645BD00DFB214 /* MainMenu.xib */; };
+		158B51E315B645BD00DFB214 /* Nexmo.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 158B51E115B645BD00DFB214 /* Nexmo.xcdatamodeld */; };
+		158B51EB15B645BD00DFB214 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 158B51EA15B645BD00DFB214 /* SenTestingKit.framework */; };
+		158B51EC15B645BD00DFB214 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 158B51C915B645BD00DFB214 /* Cocoa.framework */; };
+		158B51F415B645BD00DFB214 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 158B51F215B645BD00DFB214 /* InfoPlist.strings */; };
+		158B51F715B645BD00DFB214 /* NexmoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 158B51F615B645BD00DFB214 /* NexmoTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		158B51ED15B645BD00DFB214 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 158B51BC15B645BD00DFB214 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 158B51C415B645BD00DFB214;
+			remoteInfo = Nexmo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		158B51C515B645BD00DFB214 /* Nexmo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Nexmo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		158B51C915B645BD00DFB214 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		158B51CC15B645BD00DFB214 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		158B51CD15B645BD00DFB214 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		158B51CE15B645BD00DFB214 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		158B51D115B645BD00DFB214 /* Nexmo-Info.plist */ = {isa = PBXFileReference; path = "Nexmo-Info.plist"; sourceTree = "<group>"; };
+		158B51D315B645BD00DFB214 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		158B51D515B645BD00DFB214 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		158B51D715B645BD00DFB214 /* Nexmo-Prefix.pch */ = {isa = PBXFileReference; path = "Nexmo-Prefix.pch"; sourceTree = "<group>"; };
+		158B51D915B645BD00DFB214 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		158B51DB15B645BD00DFB214 /* AppDelegate.h */ = {isa = PBXFileReference; path = AppDelegate.h; sourceTree = "<group>"; };
+		158B51DC15B645BD00DFB214 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		158B51DF15B645BD00DFB214 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		158B51E215B645BD00DFB214 /* Nexmo.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Nexmo.xcdatamodel; sourceTree = "<group>"; };
+		158B51E915B645BD00DFB214 /* NexmoTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NexmoTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		158B51EA15B645BD00DFB214 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		158B51F115B645BD00DFB214 /* NexmoTests-Info.plist */ = {isa = PBXFileReference; path = "NexmoTests-Info.plist"; sourceTree = "<group>"; };
+		158B51F315B645BD00DFB214 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		158B51F515B645BD00DFB214 /* NexmoTests.h */ = {isa = PBXFileReference; path = NexmoTests.h; sourceTree = "<group>"; };
+		158B51F615B645BD00DFB214 /* NexmoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NexmoTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		158B51C215B645BD00DFB214 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				158B51CA15B645BD00DFB214 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		158B51E515B645BD00DFB214 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				158B51EB15B645BD00DFB214 /* SenTestingKit.framework in Frameworks */,
+				158B51EC15B645BD00DFB214 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		158B51BA15B645BD00DFB214 = {
+			isa = PBXGroup;
+			children = (
+				158B51CF15B645BD00DFB214 /* Nexmo */,
+				158B51EF15B645BD00DFB214 /* NexmoTests */,
+				158B51C815B645BD00DFB214 /* Frameworks */,
+				158B51C615B645BD00DFB214 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		158B51C615B645BD00DFB214 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				158B51C515B645BD00DFB214 /* Nexmo.app */,
+				158B51E915B645BD00DFB214 /* NexmoTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		158B51C815B645BD00DFB214 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				158B51C915B645BD00DFB214 /* Cocoa.framework */,
+				158B51EA15B645BD00DFB214 /* SenTestingKit.framework */,
+				158B51CB15B645BD00DFB214 /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		158B51CB15B645BD00DFB214 /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				158B51CC15B645BD00DFB214 /* AppKit.framework */,
+				158B51CD15B645BD00DFB214 /* CoreData.framework */,
+				158B51CE15B645BD00DFB214 /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		158B51CF15B645BD00DFB214 /* Nexmo */ = {
+			isa = PBXGroup;
+			children = (
+				158B51DB15B645BD00DFB214 /* AppDelegate.h */,
+				158B51DC15B645BD00DFB214 /* AppDelegate.m */,
+				158B51DE15B645BD00DFB214 /* MainMenu.xib */,
+				158B51E115B645BD00DFB214 /* Nexmo.xcdatamodeld */,
+				158B51D015B645BD00DFB214 /* Supporting Files */,
+			);
+			path = Nexmo;
+			sourceTree = "<group>";
+		};
+		158B51D015B645BD00DFB214 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				158B51D115B645BD00DFB214 /* Nexmo-Info.plist */,
+				158B51D215B645BD00DFB214 /* InfoPlist.strings */,
+				158B51D515B645BD00DFB214 /* main.m */,
+				158B51D715B645BD00DFB214 /* Nexmo-Prefix.pch */,
+				158B51D815B645BD00DFB214 /* Credits.rtf */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		158B51EF15B645BD00DFB214 /* NexmoTests */ = {
+			isa = PBXGroup;
+			children = (
+				158B51F515B645BD00DFB214 /* NexmoTests.h */,
+				158B51F615B645BD00DFB214 /* NexmoTests.m */,
+				158B51F015B645BD00DFB214 /* Supporting Files */,
+			);
+			path = NexmoTests;
+			sourceTree = "<group>";
+		};
+		158B51F015B645BD00DFB214 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				158B51F115B645BD00DFB214 /* NexmoTests-Info.plist */,
+				158B51F215B645BD00DFB214 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		158B51C415B645BD00DFB214 /* Nexmo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 158B51FA15B645BD00DFB214 /* Build configuration list for PBXNativeTarget "Nexmo" */;
+			buildPhases = (
+				158B51C115B645BD00DFB214 /* Sources */,
+				158B51C215B645BD00DFB214 /* Frameworks */,
+				158B51C315B645BD00DFB214 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Nexmo;
+			productName = Nexmo;
+			productReference = 158B51C515B645BD00DFB214 /* Nexmo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		158B51E815B645BD00DFB214 /* NexmoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 158B51FD15B645BD00DFB214 /* Build configuration list for PBXNativeTarget "NexmoTests" */;
+			buildPhases = (
+				158B51E415B645BD00DFB214 /* Sources */,
+				158B51E515B645BD00DFB214 /* Frameworks */,
+				158B51E615B645BD00DFB214 /* Resources */,
+				158B51E715B645BD00DFB214 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				158B51EE15B645BD00DFB214 /* PBXTargetDependency */,
+			);
+			name = NexmoTests;
+			productName = NexmoTests;
+			productReference = 158B51E915B645BD00DFB214 /* NexmoTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		158B51BC15B645BD00DFB214 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0430;
+				ORGANIZATIONNAME = Home;
+			};
+			buildConfigurationList = 158B51BF15B645BD00DFB214 /* Build configuration list for PBXProject "Nexmo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 158B51BA15B645BD00DFB214;
+			productRefGroup = 158B51C615B645BD00DFB214 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				158B51C415B645BD00DFB214 /* Nexmo */,
+				158B51E815B645BD00DFB214 /* NexmoTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		158B51C315B645BD00DFB214 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				158B51D415B645BD00DFB214 /* InfoPlist.strings in Resources */,
+				158B51DA15B645BD00DFB214 /* Credits.rtf in Resources */,
+				158B51E015B645BD00DFB214 /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		158B51E615B645BD00DFB214 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				158B51F415B645BD00DFB214 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		158B51E715B645BD00DFB214 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		158B51C115B645BD00DFB214 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				158B51D615B645BD00DFB214 /* main.m in Sources */,
+				158B51DD15B645BD00DFB214 /* AppDelegate.m in Sources */,
+				158B51E315B645BD00DFB214 /* Nexmo.xcdatamodeld in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		158B51E415B645BD00DFB214 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				158B51F715B645BD00DFB214 /* NexmoTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		158B51EE15B645BD00DFB214 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 158B51C415B645BD00DFB214 /* Nexmo */;
+			targetProxy = 158B51ED15B645BD00DFB214 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		158B51D215B645BD00DFB214 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				158B51D315B645BD00DFB214 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		158B51D815B645BD00DFB214 /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				158B51D915B645BD00DFB214 /* en */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		158B51DE15B645BD00DFB214 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				158B51DF15B645BD00DFB214 /* en */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+		158B51F215B645BD00DFB214 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				158B51F315B645BD00DFB214 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		158B51F815B645BD00DFB214 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		158B51F915B645BD00DFB214 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		158B51FB15B645BD00DFB214 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Nexmo/Nexmo-Prefix.pch";
+				INFOPLIST_FILE = "Nexmo/Nexmo-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		158B51FC15B645BD00DFB214 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Nexmo/Nexmo-Prefix.pch";
+				INFOPLIST_FILE = "Nexmo/Nexmo-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		158B51FE15B645BD00DFB214 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Nexmo.app/Contents/MacOS/Nexmo";
+				FRAMEWORK_SEARCH_PATHS = "$(DEVELOPER_LIBRARY_DIR)/Frameworks";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Nexmo/Nexmo-Prefix.pch";
+				INFOPLIST_FILE = "NexmoTests/NexmoTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		158B51FF15B645BD00DFB214 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Nexmo.app/Contents/MacOS/Nexmo";
+				FRAMEWORK_SEARCH_PATHS = "$(DEVELOPER_LIBRARY_DIR)/Frameworks";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Nexmo/Nexmo-Prefix.pch";
+				INFOPLIST_FILE = "NexmoTests/NexmoTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		158B51BF15B645BD00DFB214 /* Build configuration list for PBXProject "Nexmo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				158B51F815B645BD00DFB214 /* Debug */,
+				158B51F915B645BD00DFB214 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		158B51FA15B645BD00DFB214 /* Build configuration list for PBXNativeTarget "Nexmo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				158B51FB15B645BD00DFB214 /* Debug */,
+				158B51FC15B645BD00DFB214 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		158B51FD15B645BD00DFB214 /* Build configuration list for PBXNativeTarget "NexmoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				158B51FE15B645BD00DFB214 /* Debug */,
+				158B51FF15B645BD00DFB214 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		158B51E115B645BD00DFB214 /* Nexmo.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				158B51E215B645BD00DFB214 /* Nexmo.xcdatamodel */,
+			);
+			currentVersion = 158B51E215B645BD00DFB214 /* Nexmo.xcdatamodel */;
+			path = Nexmo.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 158B51BC15B645BD00DFB214 /* Project object */;
+}
