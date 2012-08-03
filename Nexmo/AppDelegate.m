@@ -7,6 +7,8 @@
 //
 
 #import "AppDelegate.h"
+#import "PreferencesViewController.h"
+#import "SmsViewController.h"
 
 @implementation AppDelegate
 
@@ -15,9 +17,19 @@
 @synthesize managedObjectModel = __managedObjectModel;
 @synthesize managedObjectContext = __managedObjectContext;
 
+@synthesize nexmoPref = _nexmoPref;
+@synthesize nexmoSms = _nexmoSms;
+
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification
 {
     // Insert code here to initialize your application
+    self.nexmoPref = [[PreferencesViewController alloc]init];
+    self.nexmoPref.delegate = self;
+    
+    self.nexmoSms = [[SmsViewController alloc]initWithNibName:@"SmsViewController" bundle:NULL];
+    [[self.nexmoSms view]awakeFromNib];
+    self.nexmoSms.view.frame = CGRectMake(0, 0, [self.window.contentView bounds].size.width, [self.window.contentView bounds].size.height);
+    [self.window.contentView addSubview:self.nexmoSms.view];
 }
 
 // Returns the directory the application uses to store the Core Data store file. This code uses a directory named "Home.Nexmo" in the user's Application Support directory.
@@ -135,6 +147,22 @@
     }
 }
 
+- (IBAction)nexmoPreferences:(NSMenuItem *)sender {
+    NSLog(@"Preference!!!!");
+    self.nexmoPref.view.frame = CGRectMake(0, 0, [self.window.contentView bounds].size.width, [self.window.contentView bounds].size.height);
+    CGFloat alpha = 1.0f;
+    self.nexmoPref.view.alphaValue = alpha;
+    [self.nexmoSms.view removeFromSuperview];
+    [self.nexmoPref setPreference];
+    [self.window.contentView addSubview:[self.nexmoPref view]];
+}
+
+-(void)InvokePreferenceSaved:(PreferencesViewController *) controller  isSaved:(BOOL) saved{
+    [self.window.contentView  addSubview: self.nexmoSms.view ];
+    [controller.view removeFromSuperview];
+    NSLog(@"Invoke save preferences");
+}
+
 - (NSApplicationTerminateReply)applicationShouldTerminate:(NSApplication *)sender
 {
     // Save changes in the application's managed object context before the application terminates.
@@ -180,5 +208,7 @@
 
     return NSTerminateNow;
 }
+
+
 
 @end
