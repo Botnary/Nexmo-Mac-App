@@ -8,6 +8,7 @@
 
 #import <Cocoa/Cocoa.h>
 #import "SendSms.h"
+#import "PhoneLabelView.h"
 
 @interface SmsViewController : NSViewController{
 
@@ -19,6 +20,9 @@
 @property (nonatomic, retain) IBOutlet NSTextField *nsTextFieldStatus;
 @property (nonatomic, retain) SendSms *nexmoSendSms;
 @property (assign) IBOutlet NSButton *sendSmsButton;
+@property (assign) IBOutlet NSBox *nsBoxContainer;
+@property (assign) PhoneLabelView *phoneLabelView;
+@property (assign) IBOutlet NSTextField *phoneLabelNSTextField;
 
 @property (assign) int currentProgress;
 @property (assign) NSTimer *timer;

@@ -59,6 +59,9 @@
 		15A0163D15CB76A6003F7954 /* button-send.png in Resources */ = {isa = PBXBuildFile; fileRef = 15A0163C15CB76A6003F7954 /* button-send.png */; };
 		15A486ED15B79F8000FC3C40 /* SmsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 15A486EB15B79F8000FC3C40 /* SmsViewController.m */; };
 		15A486EE15B79F8000FC3C40 /* SmsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 15A486EC15B79F8000FC3C40 /* SmsViewController.xib */; };
+		15A5F38B15CC475400431709 /* PhoneLabelView.m in Sources */ = {isa = PBXBuildFile; fileRef = 15A5F38A15CC475400431709 /* PhoneLabelView.m */; };
+		15A5F38D15CC479700431709 /* phone-label.png in Resources */ = {isa = PBXBuildFile; fileRef = 15A5F38C15CC479700431709 /* phone-label.png */; };
+		15A5F38F15CC47A000431709 /* message-label.png in Resources */ = {isa = PBXBuildFile; fileRef = 15A5F38E15CC47A000431709 /* message-label.png */; };
 		15A5F47C15C0C8DF0070C82F /* NSObject+SBJson.m in Sources */ = {isa = PBXBuildFile; fileRef = 15A5F46415C0C8DF0070C82F /* NSObject+SBJson.m */; };
 		15A5F47D15C0C8DF0070C82F /* SBJsonParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 15A5F46715C0C8DF0070C82F /* SBJsonParser.m */; };
 		15A5F47E15C0C8DF0070C82F /* SBJsonStreamParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 15A5F46915C0C8DF0070C82F /* SBJsonStreamParser.m */; };
@@ -179,6 +182,10 @@
 		15A486EA15B79F8000FC3C40 /* SmsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SmsViewController.h; path = Sms/SmsViewController.h; sourceTree = "<group>"; };
 		15A486EB15B79F8000FC3C40 /* SmsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SmsViewController.m; path = Sms/SmsViewController.m; sourceTree = "<group>"; };
 		15A486EC15B79F8000FC3C40 /* SmsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = SmsViewController.xib; path = Sms/SmsViewController.xib; sourceTree = "<group>"; };
+		15A5F38915CC475400431709 /* PhoneLabelView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PhoneLabelView.h; path = Sms/PhoneLabelView.h; sourceTree = "<group>"; };
+		15A5F38A15CC475400431709 /* PhoneLabelView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PhoneLabelView.m; path = Sms/PhoneLabelView.m; sourceTree = "<group>"; };
+		15A5F38C15CC479700431709 /* phone-label.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "phone-label.png"; sourceTree = "<group>"; };
+		15A5F38E15CC47A000431709 /* message-label.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "message-label.png"; sourceTree = "<group>"; };
 		15A5F46315C0C8DF0070C82F /* NSObject+SBJson.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+SBJson.h"; sourceTree = "<group>"; };
 		15A5F46415C0C8DF0070C82F /* NSObject+SBJson.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+SBJson.m"; sourceTree = "<group>"; };
 		15A5F46515C0C8DF0070C82F /* SBJson.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJson.h; sourceTree = "<group>"; };
@@ -463,9 +470,21 @@
 				15A0162B15CB6813003F7954 /* InputBg */,
 				15A486EB15B79F8000FC3C40 /* SmsViewController.m */,
 				15A0163C15CB76A6003F7954 /* button-send.png */,
+				15A5F38715CC471200431709 /* LabelsBg */,
 				15A486EC15B79F8000FC3C40 /* SmsViewController.xib */,
 			);
 			name = Sms;
+			sourceTree = "<group>";
+		};
+		15A5F38715CC471200431709 /* LabelsBg */ = {
+			isa = PBXGroup;
+			children = (
+				15A5F38915CC475400431709 /* PhoneLabelView.h */,
+				15A5F38A15CC475400431709 /* PhoneLabelView.m */,
+				15A5F38E15CC47A000431709 /* message-label.png */,
+				15A5F38C15CC479700431709 /* phone-label.png */,
+			);
+			name = LabelsBg;
 			sourceTree = "<group>";
 		};
 		15A5F46015C0C75E0070C82F /* SBJson_3.1 */ = {
@@ -600,6 +619,8 @@
 				15A0163315CB6F49003F7954 /* Glass.aiff in Resources */,
 				15A0163B15CB73DC003F7954 /* input-bg.png in Resources */,
 				15A0163D15CB76A6003F7954 /* button-send.png in Resources */,
+				15A5F38D15CC479700431709 /* phone-label.png in Resources */,
+				15A5F38F15CC47A000431709 /* message-label.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -677,6 +698,7 @@
 				15A5F48A15C0CA250070C82F /* SmsPreferences.m in Sources */,
 				15A0161E15CB5A02003F7954 /* SmsBackgroundView.m in Sources */,
 				15A0162F15CB686E003F7954 /* InputBackground.m in Sources */,
+				15A5F38B15CC475400431709 /* PhoneLabelView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

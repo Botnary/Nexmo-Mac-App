@@ -9,6 +9,7 @@
 #import "SmsViewController.h"
 #import "SmsBackgroundView.h"
 
+
 @interface SmsViewController ()
 
 @end
@@ -22,7 +23,10 @@
 @synthesize nsProgressesSendinSms = _nsProgressesSendinSms;
 @synthesize nexmoSendSms = _nexmoSendSms;
 @synthesize sendSmsButton = _sendSmsButton;
+@synthesize nsBoxContainer = _nsBoxContainer;
 @synthesize currentProgress = _currentProgress;
+@synthesize phoneLabelView = _phoneLabelView;
+@synthesize phoneLabelNSTextField = _phoneLabelNSTextField;
 
 @synthesize timer = _timer;
 
@@ -33,6 +37,7 @@
         // Initialization code here.
         self.nexmoSendSms = [[SendSms alloc]init];
         self.currentProgress = 0;
+        self.phoneLabelView = [[PhoneLabelView alloc]init];
     }
     
     return self;
@@ -43,8 +48,18 @@
     if(self){
         self.nexmoSendSms = [[SendSms alloc]init];
         self.currentProgress = 0;
+        self.phoneLabelView = [[PhoneLabelView alloc]init];
     }
     return self;
+}
+
+- (void)addPhoneLabel{
+    if(![self.phoneLabelView isDescendantOf:[self view]])
+    {
+        //[[self.nsBoxContainer contentView]addSubview:self.phoneLabelView];
+        NSLog(@"%@",self.phoneLabelView);
+        //[self.view addSubview:self.phoneLabelView];
+    }
 }
 
 - (void)loadView
@@ -54,6 +69,8 @@
     [self showCurrentStatus:FALSE withStatus:@"" withProgress:0];
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(textDidChange:) name:NSControlTextDidChangeNotification object:nil];
     [self.sendSmsButton setImage:[NSImage imageNamed:@"button-send.png"]];
+    //[self.nsBoxContainer addSubview:[[PhoneLabelView alloc]init]];
+    [self addPhoneLabel];
 }
 
 - (IBAction)sendMessage:(NSButton *)sender {
